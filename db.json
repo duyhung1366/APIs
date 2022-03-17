@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "title": "html2",
+      "author": "hung",
+      "id": 2
+    }
+  ],
+  "comment": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "courses": [{
+    "id": 1 ,
+    "name-courses": "javascript", 
+    "decription": "hung day"
+  }]
+}
