@@ -7,7 +7,6 @@ var courseApi = "http://localhost:3000/courses";
 
 
 function start() {
-    console.log('hihi')
     getCourses(renderCourses);
     // create 
     createData();
@@ -68,19 +67,13 @@ function handleCreate(dataForm) {
 }
 
 // delete 
-// function deleteData(id){ 
-//      fetch(courseApi + '/' + id, {
-//         method: 'DELETE',
-//         headers: {
-//             'Content-Type': 'application/json'
-//             // 'Content-Type': 'application/x-www-form-urlencoded',
-//         },
-//      })
-//         .then(response => response.json())
-//         .then(value => {
-//             document.getElementById('course-'+ id).remove();
-//         })
-// }
+function deleteData(id){ 
+     fetch(courseApi + '/' + id, optionMethodsFetch('DELETE'))
+        .then(response => response.json())
+        .then(value => {
+            document.getElementById('course-'+ id).remove();
+        })
+}
 
 // option method fetch
 function optionMethodsFetch(methods, data) {

@@ -21,9 +21,5 @@
   "profile": {
     "name": "typicode"
   },
-  "courses": [{
-    "id": 1 ,
-    "name-courses": "javascript", 
-    "decription": "hung day"
-  }]
+  "courses": []
 }
